@@ -1,0 +1,19 @@
+{
+  "name": "valentine",
+  "version": "1.0.0",
+  "description": "Valentine ask",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Hanson Chieu",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  }
+}
