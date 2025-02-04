@@ -16,4 +16,8 @@ app.get("/answer", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "answer.html"));
 });
 
+app.get("/yes", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "yes.html"));
+});
+
 app.listen(HTTP_PORT, () => console.log(`server listening on: ${HTTP_PORT}`));
