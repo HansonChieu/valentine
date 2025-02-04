@@ -1,0 +1,66 @@
+body {
+  background: rgb(244, 136, 136);
+  font-family: Arial, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+  gap: 10px; /* Adds space between columns */
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  margin-top: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds space between images */
+}
+
+.column img {
+  width: 100%; /* Makes images fill the column width */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em; /* Adjust as needed */
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10em;
+}
+.heart {
+  justify-self: center;
+}
+
+.buttons {
+  margin-top: 1em;
+  width: 20em;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#avoidButton {
+  position: absolute;
+  transition: top 0.2s, left 0.2s;
+  left: 50%;
+  transform: translateX(50px);
+}

@@ -10,23 +10,91 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link href="style.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
     <title>Yes!</title>
 </head>
 <body>
-  <div class="container">
-  <lord-icon
-  src="https://cdn.lordicon.com/xjybgjpa.json"
-  trigger="loop"
-  stroke="light"
-  colors="primary:#e83a30,secondary:#08a88a"
-  style="width:400px;height:400px">
-  </lord-icon>
-
-  <h1>Thank you for choosing to be my valentine!</h1>
+  <div class="wrapper">
+    <div class="gallery">
+      <div class="column">
+        <img src="20cba085-759e-4563-8bb6-09298154c088.jpg">
+        <img src="cne.jpeg">
+        <img src="elevator.jpeg">
+      </div>
+      <div class="column">
+        <img src="elevator2.jpeg">
+        <img src="gym.jpeg">
+        <img src="halloween.jpeg">
+      </div>
+      <div class="column">
+        <img src="veld.jpeg">
+        <img src="veld2.jpeg">
+        <img src="veld3.jpeg">
+      </div>
+      <div class="column">
+        <img src="WhatsApp Image 2025-02-04 at 2.33.15 PM.jpeg">
+        <img src="WhatsApp Image 2025-02-04 at 2.33.16 PM.jpeg">
+        <img src="wintercctv.jpeg">
+      </div>
+    </div>
+    <div class="modal" id="myModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Yay</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <lord-icon
+              src="https://cdn.lordicon.com/xjybgjpa.json"
+              trigger="loop"
+              stroke="light"
+              colors="primary:#e83a30,secondary:#08a88a"
+              style="width:300px;height:300px">
+              </lord-icon>
+            
+              <h1>Thank you for choosing to be my valentine!</h1>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
 
-
+<div class="modal" id="myModal2" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <lord-icon
+          src="https://cdn.lordicon.com/xjybgjpa.json"
+          trigger="loop"
+          stroke="light"
+          colors="primary:#e83a30,secondary:#08a88a"
+          style="width:300px;height:300px">
+          </lord-icon>
+        
+          <h2>Valentine's day details</h2>
+          <p>Dinner reserved on February 14, 2025 6:30pm</p>
+          <p>casual/semi-formal</p>
+          <p>May have activity after</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script
@@ -34,5 +102,21 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Show the modal when the page loads
+      document.addEventListener('DOMContentLoaded', function () {
+        var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+        var myModal2 = new bootstrap.Modal(document.getElementById('myModal2'));
+    
+        // Show the first modal
+        myModal.show();
+    
+        // Listen for the first modal's close event
+        document.getElementById('myModal').addEventListener('hidden.bs.modal', function () {
+          // Show the second modal after the first one is closed
+          myModal2.show();
+        });
+      });
+    </script>
 </body>
 </html>

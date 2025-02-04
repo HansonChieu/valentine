@@ -10,35 +10,26 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link href="style.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
     <title>Valentine Answer</title>
   </head>
   <body>
-    <div class="container">
-      <lord-icon
-        class="heart"
-        src="https://cdn.lordicon.com/dqhmanhc.json"
-        trigger="loop"
-        colors="primary:#f28ba8,secondary:#ebe6ef,tertiary:#ffc738,quaternary:#f9c9c0,quinary:#ee8f66"
-        style="width: 300px; height: 300px"
-      >
-      </lord-icon>
-
-      <h1>Will You Be My Valentine?</h1>
-      <div class="buttons">
-      <a href="/yes">
-        <button type="button" class="btn btn-primary btn-md">
-          Yes Of Course!
-        </button>
-      </a>
-      
-        <button type="button" class="btn btn-primary btn-md" id="avoidButton">
-          No I'm a loser
-        </button>
+      <div class="container">
+        <lord-icon
+          class="heart"
+          src="https://cdn.lordicon.com/dqhmanhc.json"
+          trigger="loop"
+          colors="primary:#f28ba8,secondary:#ebe6ef,tertiary:#ffc738,quaternary:#f9c9c0,quinary:#ee8f66"
+          style="width: 300px; height: 300px"
+        ></lord-icon>
+        <h1>Will You Be My Valentine?</h1>
+        <div class="buttons">
+          <a href="/yes">
+            <button type="button" class="btn btn-primary btn-md">Yes Of Course!</button>
+          </a>
+          <button type="button" class="btn btn-primary btn-md" id="avoidButton">No I'm a loser</button>
+        </div>
       </div>
-    </div>
-
-
     <script>
       const button = document.getElementById("avoidButton");
 
