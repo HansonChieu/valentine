@@ -19,7 +19,7 @@ body {
   width:20em;
   display: flex;
   justify-content: space-between;
-  position:relative
+  position:relative;
   gap:20px;
 }
 
